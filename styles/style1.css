@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+
+:root{
+    --cor-primaria:#F15412;
+    --cor-secundaria:#000000;
+    --cor-tercearia:#34B3F1;
+    --cor-texto:#EEEEEE;
+    --cor-hover:#4b1501;
+}
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2% 0% 0% 10%;
+}
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    border: 0px solid var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.ul{
+    display: flex;
+    flex-grow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.li{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.titulo-incrivel {
+    font-weight: bold;
+    color:var(--cor-tercearia);
+    font-weight: 600;
+}
+.apresentacao {
+    padding: 8% 10%;
+    gap: 82px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+.apresentacao__textos {
+    width: 50%;
+    font-family: 'Cinzel', serif;
+}
+.imagem_mais_texto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: 1s;
+}
+h1 {
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 1.25rem;
+}
+.h2{
+    padding-top: 0.9rem;
+}
+p,li,ul {
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+    padding-right: 5%;
+}
+strong {
+    font-weight: 600;
+}
+.redes_sociais{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.9rem;
+    gap: 0.6rem;
+}
+button{
+    background-color:var(--cor-secundaria);
+}
+.link {
+    display: flex;
+    gap: 0.9rem;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    background-color: var(--cor-secundaria);
+    border: 0.125rem solid var(--cor-primaria);
+    font-weight: 600; 
+    width: 12.5rem;
+    padding: 0.3rem;
+    font-size: 1.18rem;
+    border-radius: 1.56rem;
+    text-decoration: none;
+    color: #22E627;
+
+    transition: 1s;
+}
+.link:hover {
+    background-color: var(--cor-hover);
+    border-radius: 1.875rem;
+    transition: 1s;
+    width: 13.75rem;
+}
+.link__menu{
+    display: flex;
+    gap: 2rem;
+}
+.link__header{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    transition: 1s;
+}
+.link__header:hover{
+    color: orange;
+    font-size: 90%;
+    transition: 1s;
+}
+.spotify{
+    display: flex;
+    gap: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    border: 0.125rem solid var(--cor-primaria);
+    font-weight: 600; 
+    width: 25rem;
+    padding: 0.3rem;
+    font-size: 1.18rem;
+    border-radius: 1.56rem;
+    text-decoration: none;
+    transition: 1s;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+    padding: 5px;
+    background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    
+}
+.pedido_casamento{
+    font-size: 50%;
+    transition: 1s;
+}
+.pedido_casamento:hover{
+    font-size: 800%;
+    transition: 1s;
+}
+
+@media (max-width: 1200px) {
+    header{
+        justify-content: center;
+        align-items: center;
+        padding: 2% 0% 0% 0%;
+    }
+    body{
+        background-color: var(--cor-hover);
+    }
+    .section{
+        padding: 1rem 1rem
+    }
+    button{
+        background-color: var(--cor-hover);
+    }
+    .apresentacao {
+        padding: 5% 1%;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column-reverse wrap;
+    }
+    .apresentacao__textos{
+        width: auto;
+    }
+    .ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagem_mais_texto{
+        justify-content: center;
+        align-items: center;
+    }
+    .spotify{
+        width: 15rem;
+    }
+    footer{
+        background-color: var(--cor-secundaria);
+    }
+}
