@@ -1,19 +1,21 @@
 .banner {
     text-align: center;
     background: var(--cor-azul-degrade);
-    color:var(--cor-branca);
+    color: var(--cor-branca);
     padding: 2.5em 2em;
 }
-.banner__titulo{
+
+.banner__titulo {
     font-size: 18px;
     font-weight: 700;
 }
-.banner__paragrafo{
+
+.banner__paragrafo {
     font-weight: 500;
     margin: 1em 0;
 }
 
-.banner__pesquisa{
+.banner__pesquisa {
     background-color: transparent;
     border: 1px solid var(--cor-branca);
     color: var(--cor-branca);
@@ -22,7 +24,7 @@
     width: 100%;
 }
 
-.banner__pesquisa::placeholder{
+.banner__pesquisa::placeholder {
     font-family: var(--fonte-padrao);
     font-size: 14px;
     font-weight: 400;

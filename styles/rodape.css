@@ -1,0 +1,9 @@
+hr {
+    background-color: var(--cor-cinza);
+    height: 1px;
+}
+
+.rodapé{
+    background-color: var(--cor-branca);
+    padding: 24px;
+}
