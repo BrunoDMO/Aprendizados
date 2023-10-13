@@ -96,6 +96,7 @@
 
     .opções__item {
         padding: 0 1em;
+        text-transform: uppercase;
     }
 
     .opções__link {
