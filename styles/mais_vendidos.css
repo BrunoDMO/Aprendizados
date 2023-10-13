@@ -5,3 +5,10 @@
 .recomendation__texto__1linha img{
     padding-bottom: 0.4em;
 }
+
+@media screen and (min-width: 1024px) {
+    .carrosel_titulo{
+        padding-top: 2em ;
+        padding-bottom: 1em;
+    }
+}

@@ -1,4 +1,4 @@
-.cabeçalho__menu-hamburguer{
+.cabeçalho__menu-hamburguer {
     width: 48px;
     height: 48px;
     background-image: url("../assets/Menu.svg");
@@ -7,7 +7,7 @@
     background-position: center;
 }
 
-.cabeçalho{
+.cabeçalho {
     background-color: var(--cor-branca);
     display: flex;
     justify-content: space-between;
@@ -15,16 +15,16 @@
     position: relative;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
 }
 
-.container__imagem{
+.container__imagem {
     padding: 0.5em;
 }
 
-.lista-menu{
+.lista-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -32,24 +32,25 @@
     background-color: var(--cor-branca);
 }
 
-.lista-menu__titulo{
+.lista-menu__titulo {
     padding-bottom: 15px;
 }
 
-.container__botao:checked ~.lista-menu{
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item{
+.lista-menu__titulo,
+.lista-menu__item {
     padding: 1em;
 }
 
-.lista-menu__titulo{
-    color:var(--cor-titulo);
+.lista-menu__titulo {
+    color: var(--cor-titulo);
     font-weight: 700;
 }
 
-.lista-menu__item{
+.lista-menu__item {
     background: var(--cor-azul-degrade);
     background-clip: text;
     -webkit-background-clip: text;
@@ -57,6 +58,58 @@
     text-transform: uppercase;
 }
 
-.container__botao{
+.container__botao,
+.container__titulo,
+.opções {
     display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container__imagem-transparente,
+    .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+
+    .cabeçalho {
+        padding: 0 4em;
+    }
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opções {
+        display: flex;
+    }
+
+    .opções__item {
+        padding: 0 1em;
+    }
+
+    .opções__link {
+        text-decoration: none;
+        color: var(--cor-preta);
+    }
+
+    .opções__botão:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opções__botão{
+        display: none;
+    }
+
 }

@@ -26,11 +26,29 @@
                 <li class="lista-menu__item"><a class="lista-menu__link" href="#"></a>Design & UX</li>
             </ul>
             <img class="container__imagem" src="./assets/Logo.svg" alt="Logo da alurabooks">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
 
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu">
+                <li class="opções__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a class="lista-menu__link-opções" href="#"></a>Programação</li>
+                <li class="lista-menu__item"><a class="lista-menu__link-opções" href="#"></a>Front-end</li>
+                <li class="lista-menu__item"><a class="lista-menu__link-opções" href="#"></a>Infraestrutura</li>
+                <li class="lista-menu__item"><a class="lista-menu__link-opções" href="#"></a>Business</li>
+                <li class="lista-menu__item"><a class="lista-menu__link-opções" href="#"></a>Design & UX</li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
         <div class="container">
-            <a class="cabeçalho__link" href="#"><img class="container__imagem" src="./assets/Favoritos.svg"
-                    alt="Favoritos"></a>
+            <a class="cabeçalho__link" href="#"><img class="container__imagem container__imagem-transparente"
+                    src="./assets/Favoritos.svg" alt="Favoritos"></a>
             <a class="cabeçalho__link" href="#"><img class="container__imagem" src="./assets/Compras.svg"
                     alt="Compras"></a>
             <a class="cabeçalho__link" href="#"><img class="container__imagem" src="./assets/Usuário.svg"
@@ -155,8 +173,10 @@
         </section>
 
         <section class="contato">
-            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="contato__texto">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
             <input type="search" class="email" placeholder="Cadastre seu e-mail">
         </section>
 
@@ -164,6 +184,39 @@
 
         <footer class="rodapé">
             <h2 class="rodapé__titulo">Grupo alura</h2>
+            <ul class="lista-rodapé">
+                <li class="lista-rodapé__titulo">Educação</li>
+                <div class="lista-rodapé__items">
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/Caelum.svg" alt="Caelum"><a class="lista-rodapé__link" href="#">Caelum</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/CasaDoCodigo.svg" alt="casa do código"><a class="lista-rodapé__link" href="#">Casa do código</a></li>
+                </div>
+            </ul>
+
+            <ul class="lista-rodapé">
+                <li class="lista-rodapé__titulo">Educação Online</li>
+                <div class="lista-rodapé__items">
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/Alura.svg" alt="Alura"><a class="lista-rodapé__link" href="#">Alura</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/AluraEmpresas.svg" alt="Alura Para Empresas"><a class="lista-rodapé__link" href="#">Alura Para Empresa</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/AluraLATAM.svg" alt="AluraLATAM"><a class="lista-rodapé__link" href="#">Alura LATAM</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/AluraStart.svg" alt="AluraStart"><a class="lista-rodapé__link" href="#">AluraStart</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/MusicDot.svg" alt="MusicDot"><a class="lista-rodapé__link" href="#">MusicDot</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/AluraLingua.svg" alt="AluraLíngua"><a class="lista-rodapé__link" href="#">AluraLíngua</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/PM3.svg" alt="PM3"><a class="lista-rodapé__link" href="#">PM3</a></li>
+                </div>
+            </ul>
+
+            <ul class="lista-rodapé">
+                <div>
+                    <li class="lista-rodapé__titulo">Comunidade</li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/HipstersTech.svg"><a class="lista-rodapé__link" href="#">Hipsters ponto Tech</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/ScubaDev.svg" alt="Alura Para Empresas"><a class="lista-rodapé__link" href="#">Scuba Dev</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/LayersTech.svg" alt="AluraLATAM"><a class="lista-rodapé__link" href="#">Layers ponto Tech</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/LikeABoss.svg" alt="AluraStart"><a class="lista-rodapé__link" href="#">Like a Boss</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/CarreiraSemFronteira.svg" alt="MusicDot"><a class="lista-rodapé__link" href="#">Carreira sem Fronteira</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/HipstersJobs.svg" alt="AluraLíngua"><a class="lista-rodapé__link" href="#">Hipsters ponto Jobs</a></li>
+                    <li class="lista-rodapé__item"> <img src="./assets/rodapé/GUJ.svg" alt="PM3"><a class="lista-rodapé__link" href="#">GUJ</a></li>                
+                </div>
+            </ul>
         </footer>
     </main>
 
