@@ -103,3 +103,36 @@
         margin: 2em auto;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .carrosel__container{
+        display: flex;
+        margin: 3vw 10vw 3vw 10vw ;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+
+    .swiper{
+        width: 40%;
+    }
+
+    .recomendation__texto__titulo{
+        font-size: 32px;
+        margin-right: 1em;
+    }
+
+    .recomendation__texto{
+        padding: 0;
+    }
+
+    .recomendation__texto p{
+        font-size: 16px;
+        margin-right: 4em;
+    }
+
+    .recomendation{
+        margin-left: 3em;
+    }
+}
