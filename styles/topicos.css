@@ -55,4 +55,18 @@
     .tópicos__titulo{
         font-size: 32px;
     }
+
+    .tópicos__item, .recomendation__botao{
+        transition: all 0.1s ease;
+    }
+
+    .recomendation__botao:hover{
+        transition: all 0.1s ease;
+        transform: scale(1.2);
+    }
+
+    .tópicos__item:hover{
+        transition: all 0.1s ease;
+        transform: scale(1.2);
+    }
 }

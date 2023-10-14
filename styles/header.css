@@ -7,6 +7,14 @@
     background-position: center;
 }
 
+.container__botao:checked~ .container__label > .cabeçalho__menu-hamburguer {
+    background-image: url("../assets/Menu Aberto.svg");
+}
+
+.container__botao:checked ~.container__label {
+    background: var(--cor-azul-degrade);
+}
+
 .cabeçalho {
     background-color: var(--cor-branca);
     display: flex;
@@ -97,7 +105,7 @@
     }
 
     .opções__item {
-        padding: 0 1em;
+        padding: 1em;
         text-transform: uppercase;
     }
 
@@ -113,6 +121,21 @@
 
     .opções__botão {
         display: none;
+    }
+
+    .opções__botão:checked~ .opções__label > .opções__item{
+        background: var(--cor-azul-degrade);
+        color: var(--cor-branca);
+
+    }
+
+    .lista-menu__item:hover{
+        background: var(--cor-azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link-opções{
+        -webkit-text-fill-color: var(--cor-branca);
+        text-decoration: none;
     }
 
 }

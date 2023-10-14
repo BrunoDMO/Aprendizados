@@ -22,7 +22,7 @@
     margin: .5em 0;
 }
 
-.recomendation{
+.recomendation {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,43 +35,43 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.recomendation__texto{
+.recomendation__texto {
     display: flex;
     justify-content: space-between;
 
 }
 
-.recomendation__texto__titulo{
+.recomendation__texto__titulo {
     font-size: 16px;
     font-weight: 700;
     color: var(--cor-titulo);
-    padding-bottom: 1em ;
+    padding-bottom: 1em;
 }
 
-.recomendation__texto__produto{
+.recomendation__texto__produto {
     font-size: 18px;
     font-weight: 700;
     color: var(--cor-azul);
 }
 
-.recomendation__texto p{
+.recomendation__texto p {
     font-size: 14px;
     font-weight: 400;
     padding: 1em 0;
 }
 
-.recomendation__botões{
+.recomendation__botões {
     display: flex;
     justify-content: space-between;
     margin: .5em 0;
 
 }
 
-.botões{
+.botões {
     display: flex;
 }
 
-.recomendation__botões a{
+.recomendation__botões a {
     background-color: var(--cor-titulo);
     padding: 1em 2.2em;
     color: var(--cor-branca);
@@ -80,7 +80,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    
+
     .carrosel_titulo {
         font-size: 26px;
     }
@@ -89,11 +89,12 @@
         margin: 2em 0 3em 0;
     }
 
-    .swiper{
+    .swiper {
         width: 60%;
     }
 
-    .swiper-button-next, .swiper-button-prev{
+    .swiper-button-next,
+    .swiper-button-prev {
         display: block;
         top: 60%;
     }
@@ -105,34 +106,44 @@
 }
 
 @media screen and (min-width: 1728px) {
-    .carrosel__container{
+    .carrosel__container {
         display: flex;
-        margin: 3vw 10vw 3vw 10vw ;
+        margin: 3vw 10vw 3vw 10vw;
     }
 
-    .swiper-pagination{
+    .swiper-pagination {
         margin: 1em 0;
     }
 
-    .swiper{
+    .swiper {
         width: 40%;
     }
 
-    .recomendation__texto__titulo{
+    .recomendation__texto__titulo {
         font-size: 32px;
         margin-right: 1em;
     }
 
-    .recomendation__texto{
+    .recomendation__texto {
         padding: 0;
     }
 
-    .recomendation__texto p{
+    .recomendation__texto p {
         font-size: 16px;
         margin-right: 4em;
     }
 
-    .recomendation{
+    .recomendation {
         margin-left: 3em;
+    }
+
+    .swiper-slide img {
+        transition: all 1s ease;
+    }
+
+    .swiper-slide img:hover {
+        transition: all 1s ease;
+        transform: scale(1.1);
+
     }
 }
