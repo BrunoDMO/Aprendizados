@@ -62,11 +62,11 @@
 
     .recomendation__botao:hover{
         transition: all 0.1s ease;
-        transform: scale(1.2);
+        background-color: var(--cor-titulo-claro);
     }
 
-    .tópicos__item:hover{
+    .tópicos__item:hover > .tópicos__link{
         transition: all 0.1s ease;
-        transform: scale(1.2);
+        background-color: var(--cor-titulo-claro);
     }
 }
