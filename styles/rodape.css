@@ -63,4 +63,8 @@ hr {
     .rodapé{
         padding: 3em 0;
     }
+
+    .lista-rodapé__link:hover{
+        color: var(--cor-titulo);
+    }
 }

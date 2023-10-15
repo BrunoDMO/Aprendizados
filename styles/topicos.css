@@ -65,8 +65,14 @@
         background-color: var(--cor-titulo-claro);
     }
 
+    .recomendation__botao:active{
+        background-color: var(--cor-azul);
+    }
+
     .tópicos__item:hover > .tópicos__link{
         transition: all 0.1s ease;
-        background-color: var(--cor-titulo-claro);
+        /* background-color: var(--cor-titulo-claro); */
+        color: var(--cor-titulo);
+        background-color: var(--cor-branca);
     }
 }
