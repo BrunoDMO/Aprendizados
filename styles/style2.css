@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('./screen__square.css');
+
+:root {
+    --cor-primaria: #382c27;
+    --cor-secundaria: #33221A;
+    --cor-tercearia: #877E7A;
+    --cor-texto: #ED9E77;
+    --fonte-padrao: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Josefin Sans', sans-serif;
+
+    color: #BA9582 #877E7A #ED9E77 #54433B #33221A
+}
+
+
+body {
+    /* height: 100vh; */
+    background-color: var(--cor-primaria);
+
+    color: var(--cor-texto);
+    font-family: var(--fonte-padrao);
+    font-weight: 300;
+    font-size: 16px;
+}

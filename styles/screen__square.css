@@ -1,0 +1,26 @@
+main {}
+
+.screen__square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--cor-secundaria);
+    margin: 1em;
+}
+
+.square__image {
+    margin-top: 1em;
+    width: 50%;
+}
+
+.square__name {
+    padding: 1em 0.5em 0.5em 0.5em;
+    font-size: 25px;
+}
+
+.square__job{
+    color: var(--cor-tercearia);
+    padding-bottom: 0.5em;
+}
