@@ -2,7 +2,7 @@
 CURSO
 HTML e CSS: responsividade com mobile-first da Alura
 ```
-Status: finished
+Status: Done
 ```
 # Using
 * HTML
