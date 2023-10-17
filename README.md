@@ -21,5 +21,5 @@
 > Status do projeto: Desenvolvimento
 
 > ```
-> Testes de HTML, CSS e JavaScripts serão salvos aqui
+> Estudos de HTML, CSS e JavaScripts aprendidos e desenvolvidos
 > ```
