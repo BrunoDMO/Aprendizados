@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+:root{
+    --fonte-padrao:'Source Sans 3', sans-serif;
+    --cor-primaria:white;
+    --cor-secundaria: linear-gradient(90deg, rgba(187,255,181,1) 0%, rgba(151,201,146,1) 37%, rgba(151,201,146,1) 50%, rgba(151,201,146,1) 63%, rgba(187,255,181,1) 100%);
+    --cor-solida: rgb(187,255,181);
+} 
+body{
+    font-family:var(--fonte-padrao);
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 5em;
+}
+
+h3{
+    font-size: 2.5em;
+}
+
+.mensagem{
+    font-size: 2em;
+    margin-top: 3em;
+}
+
+.box{
+    font-size: 2em;
+    border: 1px solid var(--cor-primaria) ;
+    padding: 1em 1em;
+    display: inline-block;
+}
