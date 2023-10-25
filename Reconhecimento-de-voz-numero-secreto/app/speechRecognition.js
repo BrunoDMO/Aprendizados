@@ -1,11 +1,8 @@
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
-
-recognition.continuous = false;
 recognition.lang = "en-US";
-recognition.interimResults = false;
-recognition.maxAlternatives = 1;
+
 
 
 document.body.onclick = () => {
@@ -16,19 +13,25 @@ document.body.onclick = () => {
 recognition.addEventListener('result', onSpeak);
 
 const oqueFoiDito = document.querySelector('.box');
-function onSpeak(event){
+function onSpeak(event) {
     chute = event.results[0][0].transcript;
-    console.log(chute);
+    //console.log(chute);
     exibeChuteNaTela(chute);
-   
+    verificaSeOChuteEValido(chute);
 }
 
 const elementoChute = document.querySelector('#chute');
-function exibeChuteNaTela(chute){
+function exibeChuteNaTela(chute) {
+    chuteString = chute.toString();
+    const trataNumero = chute.replace(".", "");
+    const numero = parseInt(trataNumero);
+
+
     elementoChute.innerHTML = `
         <div>Você disse:</div>
-        <span class="box">${chute}</span>
-    `;
+        <span class="box">${numero}</span>
+        ${confereNumero(numero)}
+        `
 }
 
 
