@@ -16,23 +16,23 @@ function verificaSeOChuteEValido(chute) {
         // <span class="box">${numero}</span>
         // Valor fora dos limites: ${menorValor} a ${maiorValor}
         // `
-    } else{
-        elementoChute.innerHTML += confereNumero(chute);
+    } else {
+        confereNumero(chute);
     }
 }
 
 function confereNumero(numero) {
     if (numero < numeroSecreto) {
-        mensagem = `<div>O numero secreto é maior <i class="fa-solid fa-angles-up"></i> </div>` 
-        return mensagem;
+        elementoChute.innerHTML += `<div>O numero secreto é maior <i class="fa-solid fa-angles-up"></i> </div>`
 
     } else if (numero > numeroSecreto) {
-        mensagem = `<div>O numero secreto é menor <i class="fa-solid fa-angles-down"></i> </div>`
-        return mensagem;
+        elementoChute.innerHTML += `<div>O numero secreto é menor <i class="fa-solid fa-angles-down"></i> </div>`
 
-    }   else{
-        mensagem = `<div>Você Acertou o Número Secreto</i> </div>`
-        return mensagem;
+    } else {
+        document.body.innerHTML = `
+        <div class='win'>Você Acertou</div>
+        <p> o Número Secreto é ${numeroSecreto}</p>
+        `
     }
 }
 

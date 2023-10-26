@@ -28,6 +28,11 @@ h3{
     font-size: 2.5em;
 }
 
+p{
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
 .mensagem{
     display: flex;
     flex-direction: column;
@@ -47,4 +52,8 @@ h3{
     background: red;
     border-radius: 25px;
     padding: 0.4em;
+}
+
+.win{
+    font-size: 4em;
 }
