@@ -1,4 +1,5 @@
 function verificaSeOChuteEValido(chute) {
+    gameOver(chute);
     chuteString = chute.toString();
     const trataNumero = chute.replace(".", "");
     const numero = parseInt(trataNumero);
@@ -55,3 +56,12 @@ document.body.addEventListener('click', (event) =>{
         window.location.reload();
     }
 })
+
+function gameOver(chute){
+    if(chute == "Game over."){
+        document.body.innerHTML = `
+        <div class='win'>GAME OVER</div>
+        <button class="btn-jogar" id ="jogar-novamente">Jogar Novamente</button>
+        `
+    }
+}
