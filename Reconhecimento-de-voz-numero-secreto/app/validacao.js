@@ -6,12 +6,18 @@ function verificaSeOChuteEValido(chute) {
 
     if (chuteforInvalido(numero)) {
         console.log(`${numero} é um Valor inválido`);
-    } else if (!(numeroForMaiorOuMenorQueOValorPermitido(numero))) {
-        elementoChute.innerHTML = `
-        <div>Você disse:</div>
-        <span class="box">${numero}</span>
-        Valor fora dos limites: ${menorValor} a ${maiorValor}
+        elementoChute.innerHTML += `
+        Valor Inválido
         `
+    } else if (!(numeroForMaiorOuMenorQueOValorPermitido(numero))) {
+        elementoChute.innerHTML += `Valor fora dos limites: ${menorValor} a ${maiorValor}`
+        //`
+        // <div>Você disse:</div>
+        // <span class="box">${numero}</span>
+        // Valor fora dos limites: ${menorValor} a ${maiorValor}
+        // `
+    } else{
+        elementoChute.innerHTML += confereNumero(chute);
     }
 }
 

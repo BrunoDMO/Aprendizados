@@ -1,12 +1,17 @@
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
-recognition.lang = "en-US";
+const br = "pt-BR"
+const us = "en-US"
 
-
+recognition.lang = us;
+const langAtual = recognition.lang;
 
 document.body.onclick = () => {
     recognition.start();
+    elementoChute.innerHTML = `
+    <div class = "escutando">:Escutando:</div>
+ `
     console.log("Ready to receive a number command.");
 };
 
@@ -26,14 +31,22 @@ function exibeChuteNaTela(chute) {
     const trataNumero = chute.replace(".", "");
     const numero = parseInt(trataNumero);
 
-
-    elementoChute.innerHTML = `
+    if (isNaN(numero)) {
+        elementoChute.innerHTML = `
         <div>Você disse:</div>
-        <span class="box">${numero}</span>
-        ${confereNumero(numero)}
-        `
+        <span class="box"> Diga apenas números na lingua ${langAtual} </span>
+     `
+    } else{
+        elementoChute.innerHTML = `
+            <div>Você disse:</div>
+            <span class="box">${numero}</span>
+         `
+    }
 }
 
 
+recognition.onerror = (event) => {
+    elementoChute.innerHTML = "";
+};
 
 
