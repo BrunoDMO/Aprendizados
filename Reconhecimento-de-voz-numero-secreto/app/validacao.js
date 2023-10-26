@@ -32,6 +32,7 @@ function confereNumero(numero) {
         document.body.innerHTML = `
         <div class='win'>Você Acertou</div>
         <p> o Número Secreto é ${numeroSecreto}</p>
+        <button class="btn-jogar" id ="jogar-novamente">Jogar Novamente</button>
         `
     }
 }
@@ -48,3 +49,9 @@ function numeroForMaiorOuMenorQueOValorPermitido(numero) {
         return true;
     }
 }
+
+document.body.addEventListener('click', (event) =>{
+    if(event.target.id == "jogar-novamente"){
+        window.location.reload();
+    }
+})
