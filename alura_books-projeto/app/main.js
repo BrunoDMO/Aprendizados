@@ -1,6 +1,7 @@
 let livros = [];
 const endPointDaAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
 
+
 // [Titulo][preco][autor][imagen][alt][quantidade][categoria]
 
 getBuscarLivrosDaAPI();
