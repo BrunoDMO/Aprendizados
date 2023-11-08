@@ -1,13 +1,17 @@
 export default function operacao(operacao, parte){
-    operacao === "subtrair"? subtrair(parte): 
-    operacao === "somar"? somar(parte):
-    none; 
+    const contador = parte.querySelector(".controle-contador");
+
+    operacao === "-"? subtrair(contador): //operador ternario
+    operacao === "+"? somar(contador):
+    NaN; 
+
+    contador.value < 0 ? contador.value = 0 : NaN;
 }
 
-function somar(parte){
-    parte.value = parseInt(parte.value) + 1;
+function somar(contador){
+    contador.value = parseInt(contador.value) + 1;
 }
 
-function subtrair(parte){
-    parte.value = parseInt(parte.value) - 1;
+function subtrair(contador){
+    contador.value = parseInt(contador.value) - 1;
 }

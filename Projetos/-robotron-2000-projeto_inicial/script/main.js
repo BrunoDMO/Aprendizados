@@ -1,16 +1,34 @@
 import operacao from "./operacao.js";
 
 const robotron = document.querySelector(".robotron");
-const bracoSubtrair = document.querySelector("[subtrair]");
-const bracoSomar = document.querySelector("[somar]");
-const braco = document.querySelector("[braco]");
+const controleAjuste = document.querySelectorAll("[data-operacao]");
 
-bracoSomar.addEventListener("click", () =>{operacao("somar",braco)});
-bracoSubtrair.addEventListener("click", () =>{operacao("subtrair",braco)});
+controleAjuste.forEach( (elemento) =>{
+    elemento.addEventListener("click", (evento) =>{
+        //text = evento.target.textContent
+        //input = evento.target.Value
+        operacao(evento.target.textContent, evento.target.parentNode);
+
+    })
+})
 
 
-const controleAjuste = document.querySelector(".controle-ajuste");
-controleAjuste.addEventListener("click", (evento)=>{console.log(evento)});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -28,3 +46,13 @@ robotron.addEventListener("click", consoleLog);
 function consoleLog() {
     return console.log("Robo clicado");
 }
+
+
+// //tirando Vermelho
+// var lista = ["Laranja", "Vermelho", "Branco", "Amarelo", "Rosa"]; 
+
+// function tiraVermelho(lista){
+//     lista.splice(1,1);
+//     console.log(lista);
+// }
+// tiraVermelho(lista);
