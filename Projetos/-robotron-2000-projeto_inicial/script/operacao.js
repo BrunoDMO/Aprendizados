@@ -1,5 +1,5 @@
 export default function operacao(operacao, parte){
-    const contador = parte.querySelector(".controle-contador");
+    const contador = parte.querySelector("[data-contador]");
 
     operacao === "-"? subtrair(contador): //operador ternario
     operacao === "+"? somar(contador):
