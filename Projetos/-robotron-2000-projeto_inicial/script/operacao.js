@@ -1,10 +1,7 @@
 export default function operacao(operacao, parte){
     const contador = parte.querySelector("[data-contador]");
-
-    operacao === "-"? subtrair(contador): //operador ternario
-    operacao === "+"? somar(contador):
-    NaN; 
-
+    //operador ternario
+    operacao === "-"? subtrair(contador): operacao === "+"? somar(contador): NaN; 
     contador.value < 0 ? contador.value = 0 : NaN;
 }
 
