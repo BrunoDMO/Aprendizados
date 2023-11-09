@@ -33,6 +33,7 @@ export const pecas = {
 }
 
 const estatisticas = document.querySelectorAll("[data-estatistica]");
+
 export function atualizaEstatistica(pecaClicada, operador, peca) {
     const contador = peca.querySelector("[data-contador]");
     if (operador === "+") {
@@ -41,9 +42,7 @@ export function atualizaEstatistica(pecaClicada, operador, peca) {
     if (operador === "-" && contador.value > 0) {
         subtraiEstatisticas(pecaClicada);
     }
-
 }
-
 
 function somaEstastisticas(pecaClicada) {
     estatisticas.forEach((elemento) => {
