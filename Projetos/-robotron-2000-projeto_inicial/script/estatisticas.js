@@ -12,31 +12,46 @@ export const pecas = {
         "energia": 0,
         "velocidade": -20
     },
-    "nucleos":{
+    "nucleos": {
         "forca": 0,
         "poder": 7,
         "energia": 48,
         "velocidade": -24
     },
-    "pernas":{
+    "pernas": {
         "forca": 27,
         "poder": 21,
         "energia": -32,
         "velocidade": 42
     },
-    "foguetes":{
+    "foguetes": {
         "forca": 0,
         "poder": 28,
         "energia": 0,
         "velocidade": -2
     }
 }
+
 const estatisticas = document.querySelectorAll("[data-estatistica]");
-export function atualizaEstatistica(pecaClicada){
-    console.log(pecas[pecaClicada]);
+export function atualizaEstatistica(pecaClicada, operador, peca) {
+    const contador = peca.querySelector("[data-contador]");
+    if (operador === "+") {
+        somaEstastisticas(pecaClicada);
+    }
+    if (operador === "-" && contador.value > 0) {
+        subtraiEstatisticas(pecaClicada);
+    }
 
-    estatisticas.forEach((elemento) =>{
+}
+
+
+function somaEstastisticas(pecaClicada) {
+    estatisticas.forEach((elemento) => {
         elemento.textContent = parseInt(elemento.textContent) + pecas[pecaClicada][elemento.dataset.estatistica]
-
+    })
+}
+function subtraiEstatisticas(pecaClicada) {
+    estatisticas.forEach((elemento) => {
+        elemento.textContent = parseInt(elemento.textContent) - pecas[pecaClicada][elemento.dataset.estatistica]
     })
 }
