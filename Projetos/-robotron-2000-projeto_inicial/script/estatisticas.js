@@ -39,9 +39,19 @@ export function atualizaEstatistica(pecaClicada, operador, peca) {
     if (operador === "+") {
         somaEstastisticas(pecaClicada);
     }
-    if (operador === "-" && contador.value > 0) {
+    if (operador === "-" && contador.value >= 0) {
         subtraiEstatisticas(pecaClicada);
     }
+}
+
+function verificaEstatistica(){
+    // verifica quantos equipamentos estão no zero.
+    const contadores = document.querySelectorAll("[data-contador]");
+    let zeros = 0;
+    contadores.forEach((elemento) =>{
+        elemento.value == 0? zeros = zeros + 1 : NaN;
+    })
+    return zeros;
 }
 
 function somaEstastisticas(pecaClicada) {
@@ -51,6 +61,18 @@ function somaEstastisticas(pecaClicada) {
 }
 function subtraiEstatisticas(pecaClicada) {
     estatisticas.forEach((elemento) => {
-        elemento.textContent = parseInt(elemento.textContent) - pecas[pecaClicada][elemento.dataset.estatistica]
+        elemento.textContent = parseInt(elemento.textContent) - pecas[pecaClicada][elemento.dataset.estatistica];
+        verificaEstatistica() == 5? statsReset(): NaN;
+    })
+}
+
+export function statsReset(){
+    const contadores = document.querySelectorAll("[data-contador]");
+    contadores.forEach((elemento) =>{
+        elemento.value = "00";
+    })
+    estatisticas.forEach((elemento) => {
+        elemento.textContent = "000";
+        
     })
 }

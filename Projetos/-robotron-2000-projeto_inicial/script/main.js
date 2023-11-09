@@ -1,5 +1,5 @@
 import operacao from "./operacao.js";
-import { atualizaEstatistica } from "./estatisticas.js";
+import { atualizaEstatistica, statsReset } from "./estatisticas.js";
 
 const robotron = document.querySelector(".robotron");
 const controleAjuste = document.querySelectorAll("[data-modificador]");
@@ -17,8 +17,9 @@ controleAjuste.forEach( (elemento) =>{
     })
 })
 
-
-
+document.querySelector("#resetButtom").addEventListener("click", () =>{
+    statsReset();
+})
 
 
 
