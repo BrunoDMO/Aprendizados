@@ -1,20 +1,22 @@
 import operacao from "./operacao.js";
+import { pecas } from "./estatisticas.js";
+import { atualizaEstatistica } from "./estatisticas.js";
 
 const robotron = document.querySelector(".robotron");
 const controleAjuste = document.querySelectorAll("[data-modificador]");
+
 
 controleAjuste.forEach( (elemento) =>{
     elemento.addEventListener("click", (evento) =>{
         //text = evento.target.textContent
         //input = evento.target.Value
         operacao(evento.target.dataset.modificador, evento.target.parentNode);
-
+        atualizaEstatistica(evento.target.dataset.pecas);
     })
 })
 
 
-
-
+//console.log(pecas);
 
 
 
