@@ -1,4 +1,4 @@
-export const pecas = {
+const pecas = {
     "bracos": {
         "forca": 29,
         "poder": 35,
